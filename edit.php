@@ -49,6 +49,7 @@
 	</header>
 
 	<section id="main-body">
+		<a href="list.php"><h4 class="list_link">Student's List</h4></a>
 		<form action="update.php" method="post">
 			<div class="body_heading">
 				<div class="heading_text">
@@ -64,13 +65,11 @@
 			</div>
 
 			<div id="date">
+				<p>Please fill the submission date</p>
 				<div class="date_div">
 					<label for="date">Date: </label>
-					<input type="date" class="dr" value="<?= $row['submit_date'] ?>" name="submit_date">
+					<input type="date" class="dr" value="" placeholder="DD/MM/YYYY" name="submit_date">
 				</div>
-				<div class="caption">
-				<p>Dear student,<br> Fill the gaps carefully with capital letter. Don't do any mistake filling the gaps...</p>
-			</div>
 			</div>
 
 			
